@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ThalCare Design System - Empathetic health companion for Thalassemia patients
+All colors MUST be HSL. Soft pastels for calming, supportive experience.
+*/
+
+@layer base {
+  :root {
+    /* Core ThalCare Palette */
+    --background: 210 33% 98%; /* Cream White #F9FAFC */
+    --foreground: 215 25% 27%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    /* Primary - Soft Lavender for trust and calm */
+    --primary: 260 40% 75%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Pale Pink for warmth */
+    --secondary: 0 50% 95%; /* Pale Pink #FCE8E8 */
+    --secondary-foreground: 215 25% 27%;
+
+    /* Muted tones */
+    --muted: 260 40% 92%; /* Lavender Violet #E8E4F4 */
+    --muted-foreground: 215 15% 47%;
+
+    /* Accent - Mint Green for positive actions */
+    --accent: 140 50% 93%; /* Mint Green #E4F7EC */
+    --accent-foreground: 140 40% 25%;
+
+    /* Health status colors */
+    --success: 140 50% 85%;
+    --success-foreground: 140 40% 25%;
+    
+    --warning: 45 90% 85%;
+    --warning-foreground: 45 60% 25%;
+
+    --destructive: 0 70% 85%;
+    --destructive-foreground: 0 60% 25%;
+
+    /* Gentle borders and inputs */
+    --border: 260 20% 88%;
+    --input: 260 20% 92%;
+    --ring: 260 40% 75%;
+
+    /* Soft rounded corners for gentle feel */
+    --radius: 0.75rem;
+
+    /* Custom ThalCare gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(260 40% 92%), hsl(0 50% 95%));
+    --gradient-wellness: linear-gradient(135deg, hsl(140 50% 93%), hsl(260 40% 92%));
+    --gradient-emergency: linear-gradient(135deg, hsl(0 70% 90%), hsl(0 50% 95%));
+    
+    /* Gentle shadows */
+    --shadow-soft: 0 2px 20px -5px hsl(260 40% 75% / 0.15);
+    --shadow-card: 0 4px 25px -8px hsl(260 40% 75% / 0.2);
+    --shadow-floating: 0 8px 30px -10px hsl(260 40% 75% / 0.25);
+
+    /* Smooth transitions */
+    --transition-gentle: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  
+  /* ThalCare component styles */
+  .thal-card {
+    @apply bg-card rounded-2xl p-6 shadow-card border-0;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-gentle);
+  }
+  
+  .thal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-floating);
+  }
+  
+  .thal-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .thal-gradient-wellness {
+    background: var(--gradient-wellness);
+  }
+  
+  .thal-gradient-emergency {
+    background: var(--gradient-emergency);
+  }
+  
+  .thal-button-soft {
+    @apply rounded-xl px-6 py-3 font-medium transition-all duration-300;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .thal-button-soft:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-card);
+  }
+}
