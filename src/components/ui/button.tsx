@@ -18,11 +18,11 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-soft hover:shadow-card hover:-translate-y-0.5",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // ThalCare specific variants
-        wellness: "thal-gradient-wellness text-accent-foreground shadow-soft hover:shadow-card hover:-translate-y-0.5",
-        emergency: "thal-gradient-emergency text-destructive-foreground shadow-soft hover:shadow-card hover:-translate-y-0.5 animate-soft-pulse",
+        // ThalCare specific variants with improved contrast
+        wellness: "thal-gradient-wellness text-success-foreground font-medium shadow-soft hover:shadow-card hover:-translate-y-0.5",
+        emergency: "thal-gradient-emergency text-destructive-foreground font-medium shadow-soft hover:shadow-card hover:-translate-y-0.5 animate-soft-pulse",
         soft: "bg-muted text-muted-foreground hover:bg-muted/80 shadow-soft hover:shadow-card hover:-translate-y-0.5",
-        gentle: "thal-gradient-primary text-primary-foreground shadow-soft hover:shadow-card hover:-translate-y-0.5",
+        gentle: "thal-gradient-primary text-foreground font-medium shadow-soft hover:shadow-card hover:-translate-y-0.5",
       },
       size: {
         default: "h-12 px-6 py-3",

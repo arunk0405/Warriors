@@ -10,52 +10,52 @@ All colors MUST be HSL. Soft pastels for calming, supportive experience.
   :root {
     /* Core ThalCare Palette */
     --background: 210 33% 98%; /* Cream White #F9FAFC */
-    --foreground: 215 25% 27%;
+    --foreground: 215 25% 15%; /* Darker for better readability */
 
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 27%;
+    --card-foreground: 215 25% 15%; /* Darker for better contrast */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 27%;
+    --popover-foreground: 215 25% 15%;
 
-    /* Primary - Soft Lavender for trust and calm */
-    --primary: 260 40% 75%;
-    --primary-foreground: 0 0% 100%;
+    /* Primary - Deeper Lavender for better contrast */
+    --primary: 260 45% 60%; /* Deeper for better contrast */
+    --primary-foreground: 0 0% 98%; /* Slightly off-white for softer look */
 
-    /* Secondary - Pale Pink for warmth */
-    --secondary: 0 50% 95%; /* Pale Pink #FCE8E8 */
-    --secondary-foreground: 215 25% 27%;
+    /* Secondary - Deeper Pink for warmth but better contrast */
+    --secondary: 0 50% 90%; /* Deeper Pink */
+    --secondary-foreground: 215 25% 15%; /* Dark text for contrast */
 
-    /* Muted tones */
-    --muted: 260 40% 92%; /* Lavender Violet #E8E4F4 */
-    --muted-foreground: 215 15% 47%;
+    /* Muted tones with better contrast */
+    --muted: 260 30% 88%; /* Slightly darker background */
+    --muted-foreground: 215 20% 35%; /* Darker text for better readability */
 
-    /* Accent - Mint Green for positive actions */
-    --accent: 140 50% 93%; /* Mint Green #E4F7EC */
-    --accent-foreground: 140 40% 25%;
+    /* Accent - Deeper Mint Green for better contrast */
+    --accent: 140 40% 85%; /* Deeper Mint Green */
+    --accent-foreground: 140 50% 20%; /* Darker for better readability */
 
-    /* Health status colors */
-    --success: 140 50% 85%;
-    --success-foreground: 140 40% 25%;
+    /* Health status colors with improved contrast */
+    --success: 140 45% 75%; /* Deeper for better contrast */
+    --success-foreground: 140 50% 20%; /* Much darker for readability */
     
-    --warning: 45 90% 85%;
-    --warning-foreground: 45 60% 25%;
+    --warning: 45 80% 75%; /* Deeper warning color */
+    --warning-foreground: 45 70% 20%; /* Darker text */
 
-    --destructive: 0 70% 85%;
-    --destructive-foreground: 0 60% 25%;
+    --destructive: 0 60% 75%; /* Deeper destructive color */
+    --destructive-foreground: 0 70% 20%; /* Much darker for readability */
 
     /* Gentle borders and inputs */
-    --border: 260 20% 88%;
-    --input: 260 20% 92%;
-    --ring: 260 40% 75%;
+    --border: 260 20% 85%; /* Slightly darker for better definition */
+    --input: 260 20% 90%; /* Slightly darker */
+    --ring: 260 45% 60%; /* Match the new primary color */
 
     /* Soft rounded corners for gentle feel */
     --radius: 0.75rem;
 
-    /* Custom ThalCare gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(260 40% 92%), hsl(0 50% 95%));
-    --gradient-wellness: linear-gradient(135deg, hsl(140 50% 93%), hsl(260 40% 92%));
-    --gradient-emergency: linear-gradient(135deg, hsl(0 70% 90%), hsl(0 50% 95%));
+    /* Custom ThalCare gradients - improved for better text contrast */
+    --gradient-primary: linear-gradient(135deg, hsl(260 35% 85%), hsl(0 40% 88%));
+    --gradient-wellness: linear-gradient(135deg, hsl(140 40% 85%), hsl(260 35% 85%));
+    --gradient-emergency: linear-gradient(135deg, hsl(0 50% 82%), hsl(0 40% 88%));
     
     /* Gentle shadows */
     --shadow-soft: 0 2px 20px -5px hsl(260 40% 75% / 0.15);

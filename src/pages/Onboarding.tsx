@@ -161,8 +161,8 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
                     key={index}
                     className={`h-2 w-8 rounded-full transition-all duration-300 ${
                       index <= currentStep
-                        ? "bg-primary-foreground"
-                        : "bg-primary-foreground/30"
+                        ? "bg-primary"
+                        : "bg-primary/30"
                     }`}
                   />
                 ))}
@@ -172,10 +172,10 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
             {/* Content */}
             <div className="flex-1 flex flex-col justify-center">
               <div className="mb-8">
-                <h3 className="text-xl font-semibold text-primary-foreground text-center mb-2">
+                <h3 className="text-xl font-semibold text-foreground text-center mb-2">
                   {steps[currentStep].title}
                 </h3>
-                <p className="text-primary-foreground/80 text-center text-sm">
+                <p className="text-muted-foreground text-center text-sm">
                   {steps[currentStep].subtitle}
                 </p>
               </div>
@@ -190,13 +190,13 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
               <Button
                 variant="ghost"
                 onClick={handleSkip}
-                className="text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                className="text-muted-foreground hover:text-foreground hover:bg-background/20"
               >
                 Skip
               </Button>
 
               <div className="flex items-center gap-2">
-                <span className="text-sm text-primary-foreground/70">
+                <span className="text-sm text-muted-foreground">
                   {currentStep + 1} of {steps.length}
                 </span>
               </div>
@@ -204,7 +204,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
               <Button
                 variant="outline"
                 onClick={handleNext}
-                className="bg-primary-foreground text-primary hover:bg-primary-foreground/90"
+                className="bg-background text-foreground border-border hover:bg-background/90"
               >
                 {currentStep === steps.length - 1 ? "Get Started" : "Next"}
                 <ChevronRight className="h-4 w-4 ml-2" />
