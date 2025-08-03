@@ -63,39 +63,39 @@ export default function Timeline() {
         <ThalCareCard gradient="primary" className="mb-8">
           <div className="flex items-start justify-between mb-6">
             <div>
-              <h2 className="text-xl font-semibold text-primary-foreground mb-2">Current Cycle</h2>
+              <h2 className="text-xl font-semibold text-foreground mb-2">Current Cycle</h2>
               <div className="flex items-center gap-2 mb-4">
                 <Badge className={getPhaseColor(currentCycle.phase)}>
                   {currentCycle.phase} Phase
                 </Badge>
               </div>
             </div>
-            <div className="p-3 bg-primary-foreground/20 rounded-xl">
-              <Calendar className="h-8 w-8 text-primary-foreground" />
+            <div className="p-3 bg-background/20 rounded-xl">
+              <Calendar className="h-8 w-8 text-foreground" />
             </div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary-foreground">{currentCycle.startDate}</div>
-              <div className="text-sm text-primary-foreground/80">Cycle Started</div>
+              <div className="text-2xl font-bold text-foreground">{currentCycle.startDate}</div>
+              <div className="text-sm text-muted-foreground">Cycle Started</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary-foreground">{currentCycle.daysPassed}/{currentCycle.totalDays}</div>
-              <div className="text-sm text-primary-foreground/80">Days Passed</div>
+              <div className="text-2xl font-bold text-foreground">{currentCycle.daysPassed}/{currentCycle.totalDays}</div>
+              <div className="text-sm text-muted-foreground">Days Passed</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-primary-foreground">{currentCycle.nextTransfusion}</div>
-              <div className="text-sm text-primary-foreground/80">Next Transfusion</div>
+              <div className="text-2xl font-bold text-foreground">{currentCycle.nextTransfusion}</div>
+              <div className="text-sm text-muted-foreground">Next Transfusion</div>
             </div>
           </div>
 
           <div className="space-y-2">
-            <div className="flex justify-between text-sm text-primary-foreground/80">
+            <div className="flex justify-between text-sm text-muted-foreground">
               <span>Cycle Progress</span>
               <span>{Math.round(progressPercentage)}%</span>
             </div>
-            <Progress value={progressPercentage} className="h-3 bg-primary-foreground/20" />
+            <Progress value={progressPercentage} className="h-3 bg-background/20" />
           </div>
         </ThalCareCard>
 

@@ -66,31 +66,31 @@ export default function Profile() {
             
             <ThalCareCard gradient="primary">
               <div className="flex items-start gap-4">
-                <div className="p-4 bg-primary-foreground/20 rounded-full flex-shrink-0">
-                  <User className="h-8 w-8 text-primary-foreground" />
+                <div className="p-4 bg-background/20 rounded-full flex-shrink-0">
+                  <User className="h-8 w-8 text-foreground" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-semibold text-primary-foreground mb-4">
+                  <h3 className="text-xl font-semibold text-foreground mb-4">
                     {userProfile.name}
                   </h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <div className="text-sm text-primary-foreground/80">Age</div>
-                      <div className="font-medium text-primary-foreground">{userProfile.age} years</div>
+                      <div className="text-sm text-muted-foreground">Age</div>
+                      <div className="font-medium text-foreground">{userProfile.age} years</div>
                     </div>
                     <div>
-                      <div className="text-sm text-primary-foreground/80">Blood Type</div>
-                      <Badge className="bg-primary-foreground text-primary">
+                      <div className="text-sm text-muted-foreground">Blood Type</div>
+                      <Badge className="bg-background text-foreground border border-border">
                         {userProfile.bloodType}
                       </Badge>
                     </div>
                     <div>
-                      <div className="text-sm text-primary-foreground/80">Weight</div>
-                      <div className="font-medium text-primary-foreground">{userProfile.weight}</div>
+                      <div className="text-sm text-muted-foreground">Weight</div>
+                      <div className="font-medium text-foreground">{userProfile.weight}</div>
                     </div>
                     <div>
-                      <div className="text-sm text-primary-foreground/80">Height</div>
-                      <div className="font-medium text-primary-foreground">{userProfile.height}</div>
+                      <div className="text-sm text-muted-foreground">Height</div>
+                      <div className="font-medium text-foreground">{userProfile.height}</div>
                     </div>
                   </div>
                 </div>
@@ -176,23 +176,23 @@ export default function Profile() {
             
             {/* Health Metrics */}
             <ThalCareCard gradient="wellness">
-              <h3 className="font-semibold text-accent-foreground mb-4">Key Metrics</h3>
+              <h3 className="font-semibold text-success-foreground mb-4">Key Metrics</h3>
               <div className="space-y-4">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-accent-foreground">{healthMetrics.totalTransfusions}</div>
-                  <div className="text-sm text-accent-foreground/80">Total Transfusions</div>
+                  <div className="text-2xl font-bold text-success-foreground">{healthMetrics.totalTransfusions}</div>
+                  <div className="text-sm text-foreground/70">Total Transfusions</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-accent-foreground">{healthMetrics.avgCycleLength}</div>
-                  <div className="text-sm text-accent-foreground/80">Avg Cycle (days)</div>
+                  <div className="text-2xl font-bold text-success-foreground">{healthMetrics.avgCycleLength}</div>
+                  <div className="text-sm text-foreground/70">Avg Cycle (days)</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-bold text-accent-foreground">{healthMetrics.lastHemoglobin}</div>
-                  <div className="text-sm text-accent-foreground/80">Last Hemoglobin</div>
+                  <div className="text-lg font-bold text-success-foreground">{healthMetrics.lastHemoglobin}</div>
+                  <div className="text-sm text-foreground/70">Last Hemoglobin</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-bold text-accent-foreground">{healthMetrics.ironSaturation}</div>
-                  <div className="text-sm text-accent-foreground/80">Iron Saturation</div>
+                  <div className="text-lg font-bold text-success-foreground">{healthMetrics.ironSaturation}</div>
+                  <div className="text-sm text-foreground/70">Iron Saturation</div>
                 </div>
               </div>
             </ThalCareCard>
