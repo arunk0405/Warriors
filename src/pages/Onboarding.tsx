@@ -15,12 +15,12 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
 
   const steps = [
     {
-      title: "Welcome to ThalCare",
+      title: "Welcome to Need for Care",
       subtitle: "Your compassionate health companion",
       content: (
         <div className="text-center space-y-6">
           <div className="flex justify-center mb-6">
-            <img src={thalcareLogo} alt="ThalCare Logo" className="w-24 h-24 animate-gentle-bounce" />
+            <img src={thalcareLogo} alt="Need for Care Logo" className="w-24 h-24 animate-gentle-bounce" />
           </div>
           <div className="space-y-4">
             <h1 className="text-3xl font-bold text-foreground">
@@ -123,7 +123,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
               Ready to Begin! 🎉
             </h2>
             <p className="text-muted-foreground max-w-md mx-auto">
-              You're now part of the ThalCare community. We're here to support you every step of the way with compassion, understanding, and the tools you need to thrive.
+              You're now part of the Need for Care community. We're here to support you every step of the way with compassion, understanding, and the tools you need to thrive.
             </p>
             <div className="p-4 bg-muted/30 rounded-lg max-w-sm mx-auto">
               <p className="text-sm text-muted-foreground italic">

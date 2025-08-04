@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ThalCare Design System - Empathetic health companion for Thalassemia patients
+/* Need for Care Design System - Empathetic health companion for Thalassemia patients
 All colors MUST be HSL. Soft pastels for calming, supportive experience.
 */
 
 @layer base {
   :root {
-    /* Core ThalCare Palette */
+    /* Core Need for Care Palette */
     --background: 210 33% 98%; /* Cream White #F9FAFC */
     --foreground: 215 25% 15%; /* Darker for better readability */
 
@@ -52,7 +52,7 @@ All colors MUST be HSL. Soft pastels for calming, supportive experience.
     /* Soft rounded corners for gentle feel */
     --radius: 0.75rem;
 
-    /* Custom ThalCare gradients - improved for better text contrast */
+    /* Custom Need for Care gradients - improved for better text contrast */
     --gradient-primary: linear-gradient(135deg, hsl(260 35% 85%), hsl(0 40% 88%));
     --gradient-wellness: linear-gradient(135deg, hsl(140 40% 85%), hsl(260 35% 85%));
     --gradient-emergency: linear-gradient(135deg, hsl(0 50% 82%), hsl(0 40% 88%));
@@ -130,7 +130,7 @@ All colors MUST be HSL. Soft pastels for calming, supportive experience.
     @apply bg-background text-foreground font-poppins;
   }
   
-  /* ThalCare component styles */
+  /* Need for Care component styles */
   .thal-card {
     @apply bg-card rounded-2xl p-6 shadow-card border-0;
     box-shadow: var(--shadow-card);

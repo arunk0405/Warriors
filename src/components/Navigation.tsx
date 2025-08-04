@@ -26,8 +26,8 @@ export const Navigation = () => {
       <header className="lg:hidden bg-background/95 backdrop-blur-sm border-b border-border/50 p-4 sticky top-0 z-50">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img src={thalcareLogo} alt="ThalCare" className="w-8 h-8" />
-            <h1 className="text-lg font-semibold text-primary">ThalCare</h1>
+            <img src={thalcareLogo} alt="Need for Care" className="w-8 h-8" />
+            <h1 className="text-lg font-semibold text-primary">Need for Care</h1>
           </div>
           <Button 
             variant="ghost" 
@@ -72,8 +72,8 @@ export const Navigation = () => {
       {/* Desktop Sidebar */}
       <aside className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0 bg-background border-r border-border/50">
         <div className="flex items-center gap-3 p-6 border-b border-border/50">
-          <img src={thalcareLogo} alt="ThalCare" className="w-10 h-10" />
-          <h1 className="text-xl font-semibold text-primary">ThalCare</h1>
+          <img src={thalcareLogo} alt="Need for Care" className="w-10 h-10" />
+          <h1 className="text-xl font-semibold text-primary">Need for Care</h1>
         </div>
         
         <nav className="flex-1 p-4">

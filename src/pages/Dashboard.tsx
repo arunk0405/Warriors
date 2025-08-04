@@ -1,5 +1,5 @@
 import { Calendar, Heart, FileText, TrendingUp, Clock } from "lucide-react";
-import { ThalCareCard } from "@/components/ThalCareCard";
+import { NeedForCareCard } from "@/components/NeedForCareCard";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import careHands from "@/assets/care-hands.png";
@@ -41,7 +41,7 @@ export default function Dashboard() {
         {/* Key Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {/* Next Transfusion Card */}
-          <ThalCareCard className="col-span-1 md:col-span-2 lg:col-span-1">
+          <NeedForCareCard className="col-span-1 md:col-span-2 lg:col-span-1">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-primary/10 rounded-xl">
@@ -67,10 +67,10 @@ export default function Dashboard() {
                 View Timeline
               </Button>
             </div>
-          </ThalCareCard>
+          </NeedForCareCard>
 
           {/* Health Status Card */}
-          <ThalCareCard gradient="wellness">
+          <NeedForCareCard gradient="wellness">
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-success/20 rounded-xl">
@@ -92,10 +92,10 @@ export default function Dashboard() {
                 Log Today's Mood
               </Button>
             </div>
-          </ThalCareCard>
+          </NeedForCareCard>
 
           {/* Recent Reports Card */}
-          <ThalCareCard>
+          <NeedForCareCard>
             <div className="flex items-start justify-between mb-4">
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-accent/20 rounded-xl">
@@ -120,11 +120,11 @@ export default function Dashboard() {
                 View All Reports
               </Button>
             </div>
-          </ThalCareCard>
+          </NeedForCareCard>
         </div>
 
         {/* Doctor's Note Section */}
-        <ThalCareCard className="mb-8">
+        <NeedForCareCard className="mb-8">
           <div className="flex items-start gap-4">
             <div className="p-3 bg-primary/10 rounded-xl flex-shrink-0">
               <Heart className="h-6 w-6 text-primary animate-gentle-bounce" />
@@ -141,7 +141,7 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-        </ThalCareCard>
+        </NeedForCareCard>
 
         {/* Quick Actions */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

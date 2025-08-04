@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "@/components/Layout";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import Dashboard from "./pages/Dashboard";
 import Timeline from "./pages/Timeline";
 import Reports from "./pages/Reports";
@@ -18,11 +19,11 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const [showOnboarding, setShowOnboarding] = useState(
-    !localStorage.getItem('thalcare-onboarding-completed')
+    !localStorage.getItem('needforcare-onboarding-completed')
   );
 
   const handleOnboardingComplete = () => {
-    localStorage.setItem('thalcare-onboarding-completed', 'true');
+    localStorage.setItem('needforcare-onboarding-completed', 'true');
     setShowOnboarding(false);
   };
 
@@ -44,6 +45,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Layout>
             <Routes>
               <Route path="/" element={<Dashboard />} />
